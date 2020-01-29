@@ -1,0 +1,1 @@
+package pl.erti.shopping.shoppingapi.service;
