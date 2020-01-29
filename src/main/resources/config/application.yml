@@ -10,3 +10,10 @@ server:
       username: sa
       password:
       database-platform: org.hibernate.dialect.H2Dialect
+spring:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
