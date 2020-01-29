@@ -16,4 +16,9 @@ public class ProductServiceImpl implements ProductService {
     public Page<ProductEntity> page(final Pageable pageable) {
         return productRepository.findAll(pageable);
     }
+
+    @Override
+    public ProductEntity save(final ProductEntity categoryEntity) {
+        return productRepository.save(categoryEntity);
+    }
 }

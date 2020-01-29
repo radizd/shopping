@@ -6,4 +6,6 @@ import pl.erti.shopping.shoppingapi.dao.domain.CategoryEntity;
 
 public interface CategoryService {
     Page<CategoryEntity> page(Pageable pageable);
+
+    CategoryEntity save(CategoryEntity categoryEntity);
 }

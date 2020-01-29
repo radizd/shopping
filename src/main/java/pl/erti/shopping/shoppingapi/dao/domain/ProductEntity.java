@@ -12,6 +12,8 @@ import java.util.Set;
 @Table(name = "product")
 public class ProductEntity {
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PRODUCT_SEQ")
+    @SequenceGenerator(sequenceName = "product_seq", allocationSize = 1, name = "PRODUCT_SEQ")
     private Long id;
     @Column
     private String name;

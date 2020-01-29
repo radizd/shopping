@@ -16,4 +16,9 @@ public class CategoryServiceImpl implements CategoryService {
     public Page<CategoryEntity> page(final Pageable pageable) {
         return categoryRepository.findAll(pageable);
     }
+
+    @Override
+    public CategoryEntity save(final CategoryEntity categoryEntity) {
+        return categoryRepository.save(categoryEntity);
+    }
 }
